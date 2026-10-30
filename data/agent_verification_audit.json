@@ -1,0 +1,225 @@
+{
+  "timestamp": "2026-10-22 18:27:51",
+  "total_checks": 36,
+  "passed_checks": 36,
+  "failed_checks": 0,
+  "pass_rate_pct": 100.0,
+  "results": [
+    {
+      "category": "Artifacts",
+      "test": "Raw Data",
+      "passed": true,
+      "details": "23,159.5 KB"
+    },
+    {
+      "category": "Artifacts",
+      "test": "Cleaned Sales CSV",
+      "passed": true,
+      "details": "56,602.3 KB"
+    },
+    {
+      "category": "Artifacts",
+      "test": "Returns CSV",
+      "passed": true,
+      "details": "1,543.1 KB"
+    },
+    {
+      "category": "Artifacts",
+      "test": "RFM CSV",
+      "passed": true,
+      "details": "433.6 KB"
+    },
+    {
+      "category": "Artifacts",
+      "test": "Data Quality JSON",
+      "passed": true,
+      "details": "12.1 KB"
+    },
+    {
+      "category": "Artifacts",
+      "test": "Metrics Validation JSON",
+      "passed": true,
+      "details": "1.9 KB"
+    },
+    {
+      "category": "Artifacts",
+      "test": "SQL Analysis Results",
+      "passed": true,
+      "details": "182.6 KB"
+    },
+    {
+      "category": "Artifacts",
+      "test": "HTML Test Report",
+      "passed": true,
+      "details": "41.8 KB"
+    },
+    {
+      "category": "Artifacts",
+      "test": "Dashboard 1 PNG",
+      "passed": true,
+      "details": "336.6 KB"
+    },
+    {
+      "category": "Artifacts",
+      "test": "Dashboard 2 PNG",
+      "passed": true,
+      "details": "458.7 KB"
+    },
+    {
+      "category": "Artifacts",
+      "test": "Dashboard 3 PNG",
+      "passed": true,
+      "details": "535.8 KB"
+    },
+    {
+      "category": "Visual Quality",
+      "test": "Resolution: dashboard1_executive_overview.png",
+      "passed": true,
+      "details": "3200x1800 px"
+    },
+    {
+      "category": "Visual Quality",
+      "test": "Resolution: dashboard2_customer_intel.png",
+      "passed": true,
+      "details": "3200x1800 px"
+    },
+    {
+      "category": "Visual Quality",
+      "test": "Resolution: dashboard3_product_returns.png",
+      "passed": true,
+      "details": "3200x1800 px"
+    },
+    {
+      "category": "MySQL Engine",
+      "test": "Connection Handshake",
+      "passed": true,
+      "details": "Successfully connected via SQLAlchemy"
+    },
+    {
+      "category": "Database Tables",
+      "test": "customer_rfm",
+      "passed": true,
+      "details": "Size: 0.70 MB (Idx: 0.28 MB)"
+    },
+    {
+      "category": "Database Tables",
+      "test": "dim_customers",
+      "passed": true,
+      "details": "Size: 0.20 MB (Idx: 0.00 MB)"
+    },
+    {
+      "category": "Database Tables",
+      "test": "dim_date",
+      "passed": true,
+      "details": "Size: 0.05 MB (Idx: 0.03 MB)"
+    },
+    {
+      "category": "Database Tables",
+      "test": "dim_products",
+      "passed": true,
+      "details": "Size: 0.25 MB (Idx: 0.00 MB)"
+    },
+    {
+      "category": "Database Tables",
+      "test": "fact_returns",
+      "passed": true,
+      "details": "Size: 3.64 MB (Idx: 2.13 MB)"
+    },
+    {
+      "category": "Database Tables",
+      "test": "fact_sales",
+      "passed": true,
+      "details": "Size: 117.30 MB (Idx: 74.72 MB)"
+    },
+    {
+      "category": "Data Volume",
+      "test": "fact_sales Exact Count",
+      "passed": true,
+      "details": "524,878 rows"
+    },
+    {
+      "category": "Data Volume",
+      "test": "fact_returns Exact Count",
+      "passed": true,
+      "details": "11,763 rows"
+    },
+    {
+      "category": "Data Volume",
+      "test": "dim_customers Exact Count",
+      "passed": true,
+      "details": "4,372 rows"
+    },
+    {
+      "category": "Data Volume",
+      "test": "dim_products Exact Count",
+      "passed": true,
+      "details": "4,070 rows"
+    },
+    {
+      "category": "Data Volume",
+      "test": "dim_date Exact Count",
+      "passed": true,
+      "details": "305 rows"
+    },
+    {
+      "category": "Foreign Keys",
+      "test": "Sales -> Product Orphans",
+      "passed": true,
+      "details": "0 orphan records"
+    },
+    {
+      "category": "Foreign Keys",
+      "test": "Sales -> Date Orphans",
+      "passed": true,
+      "details": "0 orphan records"
+    },
+    {
+      "category": "Query Benchmark",
+      "test": "Gross Revenue & Order Count",
+      "passed": true,
+      "details": "revenue: 10642110.80 (exp 10642110.8) | orders: 19960 (exp 19960) | units: 5572420 (exp 5572420) | 1775.8ms"
+    },
+    {
+      "category": "Query Benchmark",
+      "test": "Top Country Revenue (UK)",
+      "passed": true,
+      "details": "country: United Kingdom (exp United Kingdom) | rev: 9001744.09 (exp 9001744.09) | 2341.7ms"
+    },
+    {
+      "category": "Query Benchmark",
+      "test": "November 2011 Seasonal Peak",
+      "passed": true,
+      "details": "ym: 2011-11 (exp 2011-11) | rev: 1503866.78 (exp 1503866.78) | 1921.6ms"
+    },
+    {
+      "category": "Query Benchmark",
+      "test": "RFM Champions Revenue Share",
+      "passed": true,
+      "details": "champions_cnt: 940 (exp 940) | champions_rev: 5725513.34 (exp 5725513.34) | 3.9ms"
+    },
+    {
+      "category": "RFM Distribution",
+      "test": "Total Scored Customers",
+      "passed": true,
+      "details": "4338 customers"
+    },
+    {
+      "category": "RFM Distribution",
+      "test": "R, F, M Score Range [1..5]",
+      "passed": true,
+      "details": "All within [1, 5]"
+    },
+    {
+      "category": "RFM Distribution",
+      "test": "Segment Completeness (10)",
+      "passed": true,
+      "details": "10 unique segments"
+    },
+    {
+      "category": "Business Logic",
+      "test": "Pareto Revenue Concentration",
+      "passed": true,
+      "details": "Top 2 segments drive 80.64% of spend"
+    }
+  ]
+}

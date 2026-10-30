@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<datasource formatted-name='ecommerce_analytics_mysql' inline='true' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-location>
+    <loc desc='' id='' />
+  </document-location>
+  <connection class='federated'>
+    <named-connections>
+      <named-connection caption='localhost (ecommerce_analytics)' name='mysql.connection'>
+        <connection class='mysql' dbname='ecommerce_analytics' odbc-connect-string-extras='' port='3306' server='localhost' username='root' />
+      </named-connection>
+    </named-connections>
+    <relation connection='mysql.connection' name='fact_sales' table='`ecommerce_analytics`.`fact_sales`' type='table' />
+  </connection>
+  <aliases enabled='yes' />
+  <column caption='Gross Revenue' datatype='real' name='[line_revenue]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='SUM([line_revenue])' />
+  </column>
+  <column caption='Orders' datatype='integer' name='[Total Orders]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='COUNTD([invoice_no])' />
+  </column>
+  <column caption='Identified Customers' datatype='integer' name='[Total Identified Customers]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='COUNTD([customer_id])' />
+  </column>
+  <column caption='Average Order Value (AOV)' datatype='real' name='[AOV]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='SUM([line_revenue]) / COUNTD([invoice_no])' />
+  </column>
+  <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+  </semantic-values>
+</datasource>

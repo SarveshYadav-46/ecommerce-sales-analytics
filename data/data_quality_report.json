@@ -1,0 +1,370 @@
+{
+  "report_generated_at": "2026-10-22T18:22:06.526201",
+  "raw_data": {
+    "total_rows": 541909,
+    "total_columns": 8,
+    "columns": [
+      "InvoiceNo",
+      "StockCode",
+      "Description",
+      "Quantity",
+      "InvoiceDate",
+      "UnitPrice",
+      "CustomerID",
+      "Country"
+    ],
+    "memory_usage_mb": 132.31,
+    "missing_values": {
+      "InvoiceNo": {
+        "null_count": 0,
+        "null_pct": 0.0
+      },
+      "StockCode": {
+        "null_count": 0,
+        "null_pct": 0.0
+      },
+      "Description": {
+        "null_count": 1454,
+        "null_pct": 0.27
+      },
+      "Quantity": {
+        "null_count": 0,
+        "null_pct": 0.0
+      },
+      "InvoiceDate": {
+        "null_count": 0,
+        "null_pct": 0.0
+      },
+      "UnitPrice": {
+        "null_count": 0,
+        "null_pct": 0.0
+      },
+      "CustomerID": {
+        "null_count": 135080,
+        "null_pct": 24.93
+      },
+      "Country": {
+        "null_count": 0,
+        "null_pct": 0.0
+      }
+    },
+    "total_null_cells": 136534,
+    "total_cells": 4335272,
+    "overall_completeness_pct": 96.85,
+    "dtypes": {
+      "InvoiceNo": "object",
+      "StockCode": "object",
+      "Description": "object",
+      "Quantity": "int64",
+      "InvoiceDate": "datetime64[us]",
+      "UnitPrice": "float64",
+      "CustomerID": "float64",
+      "Country": "str"
+    },
+    "date_range": {
+      "min": "2010-12-01 08:26:00",
+      "max": "2011-12-09 12:50:00",
+      "unparseable_dates": 0
+    },
+    "quantity_range": {
+      "min": -80995.0,
+      "max": 80995.0,
+      "mean": 9.5522,
+      "negative_count": 10624,
+      "zero_count": 0,
+      "nan_count": 0
+    },
+    "unitprice_range": {
+      "min": -11062.06,
+      "max": 38970.0,
+      "mean": 4.6111,
+      "negative_count": 2,
+      "zero_count": 2515,
+      "nan_count": 0
+    },
+    "unique_invoices": 25900,
+    "unique_stock_codes": 4070,
+    "unique_customers_incl_null": 4372,
+    "null_customer_rows": 135080,
+    "unique_countries": 38
+  },
+  "duplicate_analysis": {
+    "rows_in_duplicate_groups": 10147,
+    "duplicate_rows_to_remove": 5268,
+    "unique_duplicate_sets": 4879,
+    "pct_of_total": 0.97,
+    "decision": "REMOVE subsequent exact copies, KEEP first occurrence. An 'exact duplicate' means ALL columns are identical. Rationale: identical rows across invoice_no, stock_code, description, quantity, invoice_date, unit_price, customer_id, and country are system/import artifacts, not separate legitimate transactions.",
+    "sample_duplicates": [
+      {
+        "InvoiceNo": "536409",
+        "StockCode": "22111",
+        "Description": "SCOTTIE DOG HOT WATER BOTTLE",
+        "Quantity": "1",
+        "InvoiceDate": "2010-12-01 11:45:00",
+        "UnitPrice": "4.95",
+        "CustomerID": "17908.0",
+        "Country": "United Kingdom"
+      },
+      {
+        "InvoiceNo": "536409",
+        "StockCode": "22866",
+        "Description": "HAND WARMER SCOTTY DOG DESIGN",
+        "Quantity": "1",
+        "InvoiceDate": "2010-12-01 11:45:00",
+        "UnitPrice": "2.1",
+        "CustomerID": "17908.0",
+        "Country": "United Kingdom"
+      },
+      {
+        "InvoiceNo": "536409",
+        "StockCode": "21866",
+        "Description": "UNION JACK FLAG LUGGAGE TAG",
+        "Quantity": "1",
+        "InvoiceDate": "2010-12-01 11:45:00",
+        "UnitPrice": "1.25",
+        "CustomerID": "17908.0",
+        "Country": "United Kingdom"
+      },
+      {
+        "InvoiceNo": "536409",
+        "StockCode": "21866",
+        "Description": "UNION JACK FLAG LUGGAGE TAG",
+        "Quantity": "1",
+        "InvoiceDate": "2010-12-01 11:45:00",
+        "UnitPrice": "1.25",
+        "CustomerID": "17908.0",
+        "Country": "United Kingdom"
+      },
+      {
+        "InvoiceNo": "536409",
+        "StockCode": "22900",
+        "Description": " SET 2 TEA TOWELS I LOVE LONDON ",
+        "Quantity": "1",
+        "InvoiceDate": "2010-12-01 11:45:00",
+        "UnitPrice": "2.95",
+        "CustomerID": "17908.0",
+        "Country": "United Kingdom"
+      },
+      {
+        "InvoiceNo": "536409",
+        "StockCode": "22866",
+        "Description": "HAND WARMER SCOTTY DOG DESIGN",
+        "Quantity": "1",
+        "InvoiceDate": "2010-12-01 11:45:00",
+        "UnitPrice": "2.1",
+        "CustomerID": "17908.0",
+        "Country": "United Kingdom"
+      },
+      {
+        "InvoiceNo": "536409",
+        "StockCode": "22900",
+        "Description": " SET 2 TEA TOWELS I LOVE LONDON ",
+        "Quantity": "1",
+        "InvoiceDate": "2010-12-01 11:45:00",
+        "UnitPrice": "2.95",
+        "CustomerID": "17908.0",
+        "Country": "United Kingdom"
+      },
+      {
+        "InvoiceNo": "536409",
+        "StockCode": "22111",
+        "Description": "SCOTTIE DOG HOT WATER BOTTLE",
+        "Quantity": "1",
+        "InvoiceDate": "2010-12-01 11:45:00",
+        "UnitPrice": "4.95",
+        "CustomerID": "17908.0",
+        "Country": "United Kingdom"
+      },
+      {
+        "InvoiceNo": "536412",
+        "StockCode": "22327",
+        "Description": "ROUND SNACK BOXES SET OF 4 SKULLS",
+        "Quantity": "1",
+        "InvoiceDate": "2010-12-01 11:49:00",
+        "UnitPrice": "2.95",
+        "CustomerID": "17920.0",
+        "Country": "United Kingdom"
+      },
+      {
+        "InvoiceNo": "536412",
+        "StockCode": "22327",
+        "Description": "ROUND SNACK BOXES SET OF 4 SKULLS",
+        "Quantity": "1",
+        "InvoiceDate": "2010-12-01 11:49:00",
+        "UnitPrice": "2.95",
+        "CustomerID": "17920.0",
+        "Country": "United Kingdom"
+      }
+    ]
+  },
+  "classification": {
+    "after_dedup_total": 536641,
+    "eligible_sales": 524878,
+    "returns_cancellations": 10587,
+    "adjustments_non_positive_price": 1176,
+    "invalid_numeric": 0,
+    "zero_quantity": 0,
+    "verification_sum": 536641,
+    "sum_matches_total": true,
+    "eligible_sales_gross_revenue": 10642110.8
+  },
+  "integrity_checks": {
+    "raw_minus_dups_equals_dedup": {
+      "expected": 536641,
+      "actual": 536641,
+      "pass": true
+    },
+    "sales_plus_returns_equals_dedup": {
+      "expected": 536641,
+      "actual": 536641,
+      "pass": true
+    },
+    "no_rows_lost_or_created": {
+      "raw_rows": 541909,
+      "duplicates_removed": 5268,
+      "after_dedup": 536641,
+      "sales_csv": 524878,
+      "returns_csv": 11763,
+      "sales_plus_returns": 536641,
+      "pass": true
+    }
+  },
+  "filtering_decisions": [
+    {
+      "step": 1,
+      "action": "Column renaming",
+      "description": "Renamed raw Excel columns from CamelCase to snake_case (e.g. InvoiceNo → invoice_no). No rows affected.",
+      "rows_affected": "0 (schema change only)",
+      "rationale": "Consistent naming convention for SQL and Python."
+    },
+    {
+      "step": 2,
+      "action": "Data type coercion",
+      "description": "Cast quantity and unit_price to numeric (non-parseable → NaN). Cast customer_id to nullable Int64. Cast invoice_no and stock_code to stripped strings.",
+      "rows_affected": "Depends on data; typically 0",
+      "rationale": "Ensures correct arithmetic and aggregation. Nullable Int64 preserves NaN for anonymous customers."
+    },
+    {
+      "step": 3,
+      "action": "Date parsing",
+      "description": "Parsed InvoiceDate to datetime. Unparseable → NaT.",
+      "rows_affected": "Depends on data; typically 0",
+      "rationale": "Required for time-series analysis and date-part extraction."
+    },
+    {
+      "step": 4,
+      "action": "Exact duplicate removal",
+      "description": "Identified rows where ALL columns are identical. Kept the first occurrence; removed subsequent copies.",
+      "rows_affected": "See duplicate_analysis section",
+      "rationale": "Rows identical across every column including invoice_no, stock_code, timestamp, and customer_id are data artifacts. Keeping them would inflate revenue and unit counts."
+    },
+    {
+      "step": 5,
+      "action": "Return/cancellation classification",
+      "description": "Rows where invoice_no starts with 'C' OR quantity < 0 are classified as returns/cancellations and routed to returns_analysis.csv. Flagged as 'C_invoice', 'negative_quantity', or both.",
+      "rows_affected": "See classification section",
+      "rationale": "The 'C' prefix is the dataset's convention for cancelled invoices. Negative quantities represent returned items. These are a cancellation/return PROXY — the dataset does not contain actual payment or refund records."
+    },
+    {
+      "step": 6,
+      "action": "Adjustment classification",
+      "description": "Rows with unit_price ≤ 0 that are NOT C-invoices and have quantity ≥ 0 are classified as adjustments (free items, bad-debt write-offs, pricing corrections). Routed to returns_analysis.csv with flag 'adjustment_non_positive_price'.",
+      "rows_affected": "See classification section",
+      "rationale": "These rows generate zero or negative revenue and do not represent genuine sales. They are REPORTED, not silently dropped, per project requirements."
+    },
+    {
+      "step": 7,
+      "action": "Zero-quantity and invalid-numeric classification",
+      "description": "Rows with quantity = 0 or NaN quantity/price (not covered by the above categories) are flagged as anomalies and routed to returns_analysis.csv.",
+      "rows_affected": "See classification section",
+      "rationale": "Zero-quantity transactions carry no business meaning."
+    },
+    {
+      "step": 8,
+      "action": "Derived column computation",
+      "description": "Added line_revenue = quantity × unit_price, plus year, month, quarter, and year_month extracted from invoice_date.",
+      "rows_affected": "0 (new columns added, no rows removed)",
+      "rationale": "line_revenue is gross sales. Date parts enable time-series aggregation in SQL and Tableau."
+    },
+    {
+      "step": 9,
+      "action": "Anonymous customer handling",
+      "description": "Rows with NULL customer_id are KEPT in cleaned_sales.csv. They count toward revenue and order totals but are EXCLUDED from customer-level KPIs (unique customers, repeat rate, RFM). The denominator for every customer metric is stated explicitly.",
+      "rows_affected": "0 (no removal; NULLs retained)",
+      "rationale": "Dropping anonymous sales would understate revenue. Customer KPIs use only identified customers."
+    }
+  ],
+  "cleaned_sales": {
+    "total_rows": 524878,
+    "columns": [
+      "invoice_no",
+      "stock_code",
+      "description",
+      "quantity",
+      "invoice_date",
+      "unit_price",
+      "customer_id",
+      "country",
+      "line_revenue",
+      "year",
+      "month",
+      "quarter",
+      "year_month"
+    ],
+    "total_revenue": 10642110.8,
+    "unique_invoices": 19962,
+    "unique_customers": 4338,
+    "null_customer_id_rows": 132186,
+    "null_customer_id_pct": 25.18,
+    "unique_products": 3922,
+    "unique_countries": 38,
+    "units_sold": 5572420,
+    "avg_order_value": 533.12,
+    "date_range": {
+      "min": "2010-12-01 08:26:00",
+      "max": "2011-12-09 12:50:00"
+    },
+    "missing_values": {
+      "customer_id": {
+        "null_count": 132186,
+        "null_pct": 25.18
+      }
+    },
+    "monthly_revenue": {
+      "2010-12": 821452.73,
+      "2011-01": 689811.61,
+      "2011-02": 522545.56,
+      "2011-03": 716215.26,
+      "2011-04": 536968.49,
+      "2011-05": 769296.61,
+      "2011-06": 760547.01,
+      "2011-07": 718076.12,
+      "2011-08": 757841.38,
+      "2011-09": 1056435.19,
+      "2011-10": 1151263.73,
+      "2011-11": 1503866.78,
+      "2011-12": 637790.33
+    }
+  },
+  "returns_analysis": {
+    "total_rows": 11763,
+    "total_return_value": -916103.85,
+    "by_flag": {
+      "C_invoice|negative_quantity": {
+        "row_count": 9251,
+        "pct_of_returns": 78.64,
+        "total_value": -893979.73
+      },
+      "negative_quantity": {
+        "row_count": 1336,
+        "pct_of_returns": 11.36,
+        "total_value": 0.0
+      },
+      "adjustment_non_positive_price": {
+        "row_count": 1176,
+        "pct_of_returns": 10.0,
+        "total_value": -22124.12
+      }
+    }
+  }
+}

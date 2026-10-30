@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<datasource formatted-name='ecommerce_analytics_csv' inline='true' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <connection class='federated'>
+    <named-connections>
+      <named-connection caption='cleaned_sales' name='textscan.connection'>
+        <connection class='textscan' directory='../data' filename='cleaned_sales.csv' />
+      </named-connection>
+    </named-connections>
+    <relation connection='textscan.connection' name='cleaned_sales.csv' table='[cleaned_sales#csv]' type='table'>
+      <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+        <column datatype='string' name='invoice_no' ordinal='0' />
+        <column datatype='string' name='stock_code' ordinal='1' />
+        <column datatype='string' name='description' ordinal='2' />
+        <column datatype='integer' name='quantity' ordinal='3' />
+        <column datatype='datetime' name='invoice_date' ordinal='4' />
+        <column datatype='real' name='unit_price' ordinal='5' />
+        <column datatype='integer' name='customer_id' ordinal='6' />
+        <column datatype='string' name='country' ordinal='7' />
+        <column datatype='real' name='line_revenue' ordinal='8' />
+        <column datatype='integer' name='year' ordinal='9' />
+        <column datatype='integer' name='month' ordinal='10' />
+        <column datatype='integer' name='quarter' ordinal='11' />
+        <column datatype='string' name='year_month' ordinal='12' />
+      </columns>
+    </relation>
+  </connection>
+  <aliases enabled='yes' />
+  <column caption='Gross Revenue' datatype='real' name='[line_revenue]' role='measure' type='quantitative' />
+  <column caption='Total Orders' datatype='integer' name='[Total Orders]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='COUNTD([invoice_no])' />
+  </column>
+  <column caption='Identified Customers' datatype='integer' name='[Total Identified Customers]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='COUNTD([customer_id])' />
+  </column>
+  <column caption='Average Order Value (AOV)' datatype='real' name='[AOV]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='SUM([line_revenue]) / COUNTD([invoice_no])' />
+  </column>
+</datasource>

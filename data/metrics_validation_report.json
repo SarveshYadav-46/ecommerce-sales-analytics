@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-10-22 18:23:36",
+  "all_passed": true,
+  "metrics_evaluated": 6,
+  "passed_count": 6,
+  "metrics": [
+    {
+      "key": "total_revenue",
+      "label": "Total Gross Revenue",
+      "pandas_value": 10642110.8,
+      "sql_value": 10642110.8,
+      "diff_abs": 0.0,
+      "diff_pct": 0.0,
+      "tolerance": "0.01%",
+      "status": "PASS",
+      "is_currency": true,
+      "is_pct": false
+    },
+    {
+      "key": "total_orders",
+      "label": "Total Orders (Invoices)",
+      "pandas_value": 19960,
+      "sql_value": 19960,
+      "diff_abs": 0,
+      "diff_pct": 0.0,
+      "tolerance": "Exact (0)",
+      "status": "PASS",
+      "is_currency": false,
+      "is_pct": false
+    },
+    {
+      "key": "unique_customers",
+      "label": "Unique Identified Customers",
+      "pandas_value": 4338,
+      "sql_value": 4338,
+      "diff_abs": 0,
+      "diff_pct": 0.0,
+      "tolerance": "Exact (0)",
+      "status": "PASS",
+      "is_currency": false,
+      "is_pct": false
+    },
+    {
+      "key": "total_units",
+      "label": "Total Units Sold",
+      "pandas_value": 5572420,
+      "sql_value": 5572420,
+      "diff_abs": 0,
+      "diff_pct": 0.0,
+      "tolerance": "Exact (0)",
+      "status": "PASS",
+      "is_currency": false,
+      "is_pct": false
+    },
+    {
+      "key": "aov",
+      "label": "Average Order Value (AOV)",
+      "pandas_value": 533.17,
+      "sql_value": 533.17,
+      "diff_abs": 0.0,
+      "diff_pct": 0.0,
+      "tolerance": "$0.05",
+      "status": "PASS",
+      "is_currency": true,
+      "is_pct": false
+    },
+    {
+      "key": "repeat_rate_pct",
+      "label": "Customer Repeat Rate",
+      "pandas_value": 65.58,
+      "sql_value": 65.58,
+      "diff_abs": 0.0,
+      "diff_pct": 0.0,
+      "tolerance": "0.05%",
+      "status": "PASS",
+      "is_currency": false,
+      "is_pct": true
+    }
+  ]
+}
